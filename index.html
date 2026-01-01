@@ -1,7 +1,268 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Framework for Evaluating Osteoarthritic Cartilage Severity</title>
+    <meta name="description" content="Project page for High-resolution cartilage thickness mapping and scoring.">
+    
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            background-color: #f7f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Google Sans', sans-serif;
+            font-size: 2.2rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .authors {
+            font-size: 1.1rem;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .authors a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        
+        .authors sup {
+            color: #666;
+            margin-left: 2px;
+        }
+
+        .affiliations {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        .btn-primary {
+            background-color: #0056b3;
+        }
+
+        .btn-primary:hover {
+            background-color: #004494;
+        }
+
+        /* Content Styling */
+        h2 {
+            font-family: 'Google Sans', sans-serif;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            color: #444;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .abstract-box {
+            background-color: #f8f9fa;
+            border-left: 5px solid #0056b3;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .figure-placeholder {
+            width: 100%;
+            height: 300px; /* Adjust height based on your actual image */
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin: 20px 0;
+            color: #6c757d;
+            border: 2px dashed #ced4da;
+            flex-direction: column;
+        }
+
+        .figure-caption {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: -10px;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        ul {
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+
+        .bibtex {
+            background-color: #f1f3f5;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 0.85rem;
+            overflow-x: auto;
+            white-space: pre;
+        }
+
+        footer {
+            margin-top: 50px;
+            border-top: 1px solid #eaeaea;
+            padding-top: 20px;
+            font-size: 0.8rem;
+            color: #888;
+            text-align: center;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.6rem; }
+            .container { padding: 20px 15px; }
+            .btn-group { flex-direction: column; width: 100%; }
+            .btn { width: 100%; justify-content: center; box-sizing: border-box; }
+        }
+    </style>
+</head>
 <body>
-  <h1>Bienvenue sur mon site GitHub !</h1>
-  <p>Ceci est ma première page hébergée gratuitement.</p>
+
+    <div class="container">
+        <header>
+            <h1>Automatic framework for evaluating osteoarthritic cartilage severity: high-resolution cartilage thickness mapping and scoring</h1>
+            
+            <div class="authors">
+                <strong>Paul Margain</strong><sup>1</sup>, 
+                <strong>Patrick Omoumi</strong><sup>2,*</sup>, 
+                <strong>Julien Favre</strong><sup>1</sup>
+            </div>
+
+            <div class="affiliations">
+                <sup>1</sup> Lausanne University Hospital and University of Lausanne (CHUV-UNIL), BioMotion Center, Switzerland<br>
+                <sup>2</sup> Lausanne University Hospital and University of Lausanne (CHUV-UNIL), Diagnostic and Interventional Radiology, Switzerland
+            </div>
+
+            <div class="btn-group">
+                <a href="https://doi.org/10.1101/2025.11.03.25339377" target="_blank" class="btn btn-primary">
+                    📄 Read the Paper (medRxiv)
+                </a>
+                <a href="https://github.com/paulmargain/cartilage_thickness_score" target="_blank" class="btn">
+                    💻 View Code
+                </a>
+                </div>
+        </header>
+
+        <div class="figure-placeholder">
+            <h3>Teaser Image Placeholder</h3>
+            <p>Upload an image (e.g., pipeline.png) to your repo and link it here.</p>
+        </div>
+        <div class="figure-caption">
+            Figure 1: Overview of the automatic framework. Raw MRI inputs are segmented using a 3D-UNet to generate Cartilage Thickness Maps (CTh-Maps), which are then processed by a ResNet to output a severity score (CTh-Score).
+        </div>
+
+
+        <h2>Abstract</h2>
+        <div class="abstract-box">
+            <p><strong>Objectives:</strong> To develop and validate an automatic, scalable framework for assessing the femoro-tibial osteoarthritic cartilage severity using high-resolution cartilage thickness maps (CTh-Maps) and a cartilage thickness scoring system (CTh-Score).</p>
+            <p><strong>Methods:</strong> The Osteoarthritis Initiative (OAI) cohort of 4796 subjects was analyzed. A 3D-UNet was trained to segment femoro-tibial bones and cartilages using MRI from baseline and follow-ups (1 to 8 years). CTh-Maps were created for each knee. A ResNet model trained on CTh-Maps assigned a CTh-Score ranging from 0 (healthy) to 100 (end-stage OA). Validity was assessed against expert evaluations (MOAKS, KL grade).</p>
+            <p><strong>Results:</strong> The framework generated the "OAI CTh-Maps" dataset. Both CTh-Maps and CTh-Score showed excellent reproducibility (ICC>0.98). The CTh-Score demonstrated strong correlations (r=0.81) with expert assessments and detected changes significantly up to 6 years prior to radiographic progression.</p>
+        </div>
+
+        <h2>Key Findings</h2>
+        <ul>
+            <li><strong>High Reproducibility:</strong> Both the Maps and the Score achieved an ICC > 0.98 in test/retest setups.</li>
+            <li><strong>Early Detection:</strong> The CTh-Score consistently detected cartilage degeneration progression up to <strong>6 years before</strong> radiographic progression (KL grade) became apparent.</li>
+            <li><strong>Scalability:</strong> The framework is fully automatic and end-to-end, transforming raw MRI into standardized maps and quantitative scores.</li>
+            <li><strong>Trajectories:</strong> Analysis reveals three phases of progression: slow initial progression, accelerated degradation, and deceleration in end-stage disease.</li>
+        </ul>
+
+        <div class="figure-placeholder" style="height: 250px;">
+            <h3>Results Visualization Placeholder</h3>
+            <p>Upload a graph showing CTh-Score trajectories or correlation plots.</p>
+        </div>
+        <div class="figure-caption">
+            Figure 2: CTh-Score trajectories illustrating the sensitivity to OA structural progression over time.
+        </div>
+
+        <h2>Discussion & Impact</h2>
+        <p>
+            The originality of this work lies in the development of a fully automatic framework that transforms raw MRI images into standardized CTh-Maps and a continuous score of severity. 
+        </p>
+        <p>
+            Critically, the variability in trajectories aligns with cartilage pathophysiology. Identifying the "window of opportunity" where progression accelerates is vital for clinical trials and therapeutic interventions. The CTh-Score serves as a valuable tool for identifying this window during screening phases.
+        </p>
+
+        <h2>Citation</h2>
+        <p>If you use this code or dataset in your research, please cite our paper:</p>
+        <div class="bibtex">
+@article{Margain2025Automatic,
+  title={Automatic framework for evaluating osteoarthritic cartilage severity: high-resolution cartilage thickness mapping and scoring},
+  author={Margain, Paul and Omoumi, Patrick and Favre, Julien},
+  journal={medRxiv},
+  year={2025},
+  doi={10.1101/2025.11.03.25339377},
+  publisher={Cold Spring Harbor Laboratory Press}
+}
+        </div>
+
+        <footer>
+            <h3>Acknowledgements</h3>
+            <p>
+                This work was funded by the Swiss National Science Foundation (SNSF Grant #CRSII5_177155 & CRSII--222725). 
+                Data used in the preparation of this article were obtained from the Osteoarthritis Initiative (OAI).
+            </p>
+            
+        </footer>
+    </div>
+
 </body>
 </html>
